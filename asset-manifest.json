@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/website-page-with-react/static/css/main.416f0551.css",
+    "main.js": "/website-page-with-react/static/js/main.fbcaee16.js",
+    "static/media/showcase.jpg": "/website-page-with-react/static/media/showcase.1787af9cb8739b0cc98f.jpg",
+    "index.html": "/website-page-with-react/index.html",
+    "main.416f0551.css.map": "/website-page-with-react/static/css/main.416f0551.css.map",
+    "main.fbcaee16.js.map": "/website-page-with-react/static/js/main.fbcaee16.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.416f0551.css",
+    "static/js/main.fbcaee16.js"
+  ]
+}
