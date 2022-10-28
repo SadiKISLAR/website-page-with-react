@@ -5,6 +5,9 @@ import Home from "./pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Services from "./pages/Services";
 import About from "./pages/About";
+import Html from "./pages/Html";
+import Css from "./pages/Css";
+import Logo from "./pages/Logo";
 
 
 function App() {
@@ -12,7 +15,11 @@ function App() {
     <BrowserRouter>
       <Navbar />
         <Routes>
-        <Route path="/" element={<Home/> }/>
+        <Route path="/" element={<Home/> }> 
+          <Route path="html" element={<Html/>}/>
+          <Route path="css" element={<Css/>}/>
+          <Route path="logo" element={<Logo/>}/>
+        </Route>
         <Route path="/about" element={ <About/> }/>
         <Route path="/services" element={<Services/> }/>
           
