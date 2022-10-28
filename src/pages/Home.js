@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import Subscribe from "../components/subscribe/Subscribe";
+
 const Home = () => {
   return (
     <div className="root">
@@ -11,7 +14,10 @@ const Home = () => {
           </p>
         </div>
       </section>
-      {/* use Subscribe component here */}
+      <div>
+      <Link to={"/subscribe"}/>
+      </div>
+      
       <section id="boxes">
         <div className="container">{/* use Card component here */}</div>
       </section>

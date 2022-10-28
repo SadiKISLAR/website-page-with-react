@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "../../App.css";
 
 const Navbar = () => {
@@ -13,13 +14,23 @@ const Navbar = () => {
         <nav>
           <ul>
             <li>
-              <a>Home</a>
+              <NavLink
+              style={({isActive}) => ({
+                color: isActive && "#a9508b",
+              })}
+              to="/">Home</NavLink>
             </li>
             <li>
-              <a>About</a>
+              <NavLink
+              style={({isActive}) => ({
+                color: isActive && "#a9508b",
+              })} to="/about">About</NavLink>
             </li>
             <li>
-              <a>Services</a>
+              <NavLink
+              style={({isActive}) => ({
+                color: isActive && "#a9508b",
+              })} to="services">Services</NavLink>
             </li>
           </ul>
         </nav>
