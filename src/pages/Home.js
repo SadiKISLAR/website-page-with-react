@@ -1,4 +1,7 @@
 import { Link, Outlet, useNavigate } from "react-router-dom";
+import Card from "../components/card/Card";
+import Subscribe from "../components/subscribe/Subscribe";
+
 
 const Home = () => {
   const navigate = useNavigate();
@@ -14,12 +17,11 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <Link to ="Subscribe"></Link>
+      <Subscribe/>
       <section id="boxes">
-      <div className="container"><Link to="Card"></Link></div>
-      <Outlet/>
-      
+        <div className="container"><Card/></div>
       </section>
+      <Outlet/>
     </div>
   );
 };
