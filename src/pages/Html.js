@@ -1,4 +1,5 @@
 import React from "react";
+import { Navigate } from "react-router-dom";
 import html from "../assets/img/logo_html.png";
 
 const HTML = () => {
@@ -32,7 +33,7 @@ const HTML = () => {
         rerum ab at? Iure consectetur debitis illum totam, quam eaque ipsum quo
         esse at nulla suscipit soluta. Incidunt labore alias dignissimos.
       </p>
-      <button className="button_1">Go Back</button>
+      <button onClick={() => Navigate(-1)} className="button_1">Go Back</button>
     </div>
   );
 };

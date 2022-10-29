@@ -21,7 +21,7 @@ const Home = () => {
       <section id="boxes">
         <div className="container"><Card/></div>
       </section>
-      <Outlet/>
+      
     </div>
   );
 };
